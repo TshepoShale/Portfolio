@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Page</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .event-card {
+            background-color: #fff;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Add more styles for your event cards, buttons, etc. */
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Upcoming Events</h1>
+    </header>
+
+    <div class="event-card">
+        <h2>Event 1</h2>
+        <p>Date: September 20, 2023</p>
+        <p>Location: City Hall</p>
+        <button onclick="registerForEvent(1)">Register</button>
+    </div>
+
+    <div class="event-card">
+        <h2>Event 2</h2>
+        <p>Date: October 5, 2023</p>
+        <p>Location: Community Center</p>
+        <button onclick="registerForEvent(2)">Register</button>
+    </div>
+
+    <!-- Add more event cards here -->
+
+    <script>
+        // JavaScript functions can go here
+        function registerForEvent(eventId) {
+            alert('Registered for Event ' + eventId);
+        }
+    </script>
+</body>
+</html>
